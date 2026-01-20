@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alke Wallet</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/wallet.css">
+</head>
+
+<body>
+  <section class="page">
+    <div class="page-container">
+      <div class="card">
+        <div class="auth-logo">
+          <img src="../assets/img/AlkeLogo.jpg" alt="Alke Wallet logo">
+        </div>
+        <div class="auth-title">
+          <h1>Welcome to Alke Wallet</h1>
+          <p class="auth-subtitle js-auth-subtitle">Enter your credentials to access your account</p>
+        </div>
+        <form class="js-login-form">
+          <div class="form-field">
+            <i class="bi bi-envelope"></i>
+            <input class="field" name="email" type="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-field">
+            <i class="bi bi-lock"></i>
+            <input class="field" name="password" type="password" placeholder="Enter your password" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Sign In</button>
+          <p class="auth-switch">
+            Don't have an account? <a href="#" class="js-show-register">Sign Up</a>
+          </p>
+        </form>
+        <form class="js-register-form hidden">
+          <div class="form-field">
+            <i class="bi bi-person"></i>
+            <input class="field" name="name" type="text" placeholder="Your full name" required>
+          </div>
+          <div class="form-field">
+            <i class="bi bi-envelope"></i>
+            <input class="field" name="email" type="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-field">
+            <i class="bi bi-lock"></i>
+            <input class="field" name="password" type="password" placeholder="Create password" required>
+          </div>
+          <div class="form-field">
+            <i class="bi bi-shield-lock"></i>
+            <input class="field" name="confirmPassword" type="password" placeholder="Confirm password" required>
+          </div>
+          <label class="checkbox">
+            <input type="checkbox" required>
+            <span>I agree with <a href="./policy.html">Privacy & Policy</a></span>
+          </label>
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+          <p class="auth-switch">
+            Already have an account? <a href="#" class="js-show-login">Sign In</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/storage.js"></script>
+  <script src="../assets/js/auth.js"></script>
+</body>
+
+</html>
